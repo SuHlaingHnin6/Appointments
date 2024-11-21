@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="InputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="hintEnabled">false</item>
+        <item name="boxStrokeColor">@null</item>
+        <item name="boxStrokeWidthFocused">@dimen/dp_0</item>
+        <item name="boxStrokeWidth">@dimen/dp_0</item>
+        <item name="android:background">@drawable/bg_edt_search</item>
+
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="FullScreenDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+
+</resources>

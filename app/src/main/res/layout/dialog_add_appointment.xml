@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appointment "
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Title :"
+        android:textSize="@dimen/sp_15"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        />
+
+    <EditText
+        android:id="@+id/edt_title"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_50"
+        android:hint="Enter Your Title"
+        android:textSize="@dimen/dp_15"
+        android:background="@drawable/bg_edit_text"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:layout_weight="3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_cusName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ll_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Customer's Name :"
+            android:textSize="@dimen/dp_15"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/edt_cusName"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_50"
+            android:hint="Enter Your Nmae"
+            android:textSize="@dimen/dp_15"
+            android:background="@drawable/bg_edit_text"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingEnd="@dimen/dp_10"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_Company"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ll_cusName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Company :"
+            android:textSize="@dimen/dp_15"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/edt_company"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_50"
+            android:hint="Enter Your Company"
+            android:textSize="@dimen/dp_15"
+            android:background="@drawable/bg_edit_text"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingEnd="@dimen/dp_10"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_description"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ll_Company"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Appointment Description :"
+            android:textSize="@dimen/dp_15"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/edt_description"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_50"
+            android:hint="Enter Your Appointment Description"
+            android:background="@drawable/bg_edit_text"
+            android:textSize="@dimen/dp_15"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingEnd="@dimen/dp_10"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dateTime"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ll_description"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Appointment Date Time :"
+            android:textSize="@dimen/dp_15"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:text="Selected Date "
+            android:textSize="@dimen/dp_15"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingEnd="@dimen/dp_10"
+            android:layout_weight="1.5"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:text="Selected Time "
+            android:textSize="@dimen/dp_15"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingEnd="@dimen/dp_10"
+            android:layout_weight="1.5"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_location"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ll_dateTime"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Appointment Location :"
+            android:textSize="@dimen/dp_15"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            />
+
+        <EditText
+            android:id="@+id/edt_location"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_50"
+            android:hint="Enter Your Appointment Description"
+            android:textSize="@dimen/dp_15"
+            android:background="@drawable/bg_edit_text"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingEnd="@dimen/dp_10"
+            android:layout_weight="2.5"/>
+
+        <ImageButton
+            android:id="@+id/btn_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:layout_weight="0.5"
+            android:src="@drawable/map" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/error_color"
+        app:layout_constraintTop_toBottomOf="@id/ll_location"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:background="@drawable/button_primary_background"
+        android:paddingStart="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_8"
+        android:text="Cancle"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/btn_save"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:background="@drawable/button_primary_background"
+        android:paddingStart="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_8"
+        android:text="Save"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/btn_cancle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

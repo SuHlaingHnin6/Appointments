@@ -1,19 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity"
+    android:background="@color/white">
+
+<ImageView
+    android:id="@+id/iv_handshake"
+    android:layout_width="@dimen/dp_200"
+    android:layout_height="@dimen/dp_200"
+    android:src="@drawable/handshake"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="@dimen/dp_150"/>
 
     <TextView
+        android:id="@+id/tv_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_handshake"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textSize="@dimen/sp_22"
+        android:textColor="@color/color_primary"
+        android:fontFamily="@font/outfit_bold"/>
+
+    <TextView
+        android:id="@+id/tv_businessApointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business Appointment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="@dimen/sp_22"
+        android:textColor="@color/color_primary"
+        android:fontFamily="@font/outfit_bold"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_getstarted"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:background="@drawable/button_primary_background"
+        android:paddingStart="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_8"
+        android:text="Get Started"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
